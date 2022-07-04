@@ -48,7 +48,7 @@ and selecting "Download ZIP". Make sure you download the zip to your Downloads f
 Or you could try `wget https://github.com/xa49/tilos_player/archive/refs/heads/main.zip`
 
 ### 4. Unzip the files
-`unzip tilos_player-main.zip`
+`unzip main.zip`
 
 ### 5. Navigate to the folder where the unzipped files are stored
 `cd tilos_player-main`
@@ -81,5 +81,6 @@ Try running python3 install.py in the tilos_player-main folder if some shows wor
 Feature: (headless) VLC with simple controls from the command line, e.g. pause, next episode, previous episode - not much more
 Stability: copy the files to a safe location where users won't delete / move the files
 Feature: play livestream
+Stability: downloading as main.zip is risky. if there is already a main.zip then copying further instructions won't work
 
 [^1]: Notes: termios is not implemented for Windows. Later on users will have to add VLC to path.
