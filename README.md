@@ -83,3 +83,4 @@ Try running python3 install.py in the tilos_player-main folder if some shows wor
 # Improvements
 Feature: (headless) VLC with simple controls from the command line, e.g. pause, next episode, previous episode - not much more
 Stability: copy the files to a safe location where users won't delete / move the files
+Feature: play livestream
