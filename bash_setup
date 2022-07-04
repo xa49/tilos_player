@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# The user has navigated to the root folder of the project
+
+python3 install.py
+pip3 install -r requirements.txt
+chmod 754 bash_script/tilos
+export SCRIPT_FOLDER="$(pwd)/bash_script"
+
+if [ -f $HOME/.bash_profile ]; then
+    export FILENAME=".bash_profile"
+elif [ -f $HOME/.profile ]; then
+    export FILENAME=".profile"
+fi
+
+echo "PATH=$SCRIPT_FOLDER:\$PATH" >> ${HOME}/$FILENAME
+. ${HOME}/$FILENAME

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+MYDIR="$(dirname "$(which "$0")")"
+python3 "$MYDIR/../tilos_interactive.py"
