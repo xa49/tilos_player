@@ -25,10 +25,11 @@ section provides additional functionalities that could be added eventually.
 You need to have VLC, Python 3 and pip3 installed.
 
 You can check if you have these by running `vlc --version`, `python3 --version` and `pip3 --version`
-in your terminal. If you receive a "command not found" message for any of these, you need that particular
+in your terminal. If you receive a "command not found" message for any of these, you need to install that particular
 program.
 
 These tutorials could help:
+
 For VLC, see https://www.videolan.org/vlc/download-ubuntu.html
 
 For Python 3, see https://docs.python-guide.org/starting/install3/linux/
@@ -44,6 +45,8 @@ usually: `cd Downloads`
 At the top of the script's GitHub page, download the zip file by clicking on the green "Code" button
 and selecting "Download ZIP". Make sure you download the zip to your Downloads folder.
 
+Or you could try `wget https://github.com/xa49/tilos_player/archive/refs/heads/main.zip`
+
 ### 4. Unzip the files
 `unzip tilos_player-main.zip`
 
@@ -58,10 +61,8 @@ harmful code or any command that you do not want executed. You can do this by `c
 ### 7. Run the setup script
 `./bash_setup`
 
-(Might have to restart the Terminal)
-
 ### 8. Enjoy Tilos Player Unofficial!
-Run the app in the Terminal by typing `tilos` and pressing Enter
+Run the app in the Terminal by typing `tilos` and pressing Enter. (You might have to reopen your Terminal if it doesn't work straight away.)
 
 ### 9. Learn your keyboard shortcuts for best experience
 For example, if you would like to listen to the latest episode of Tilos Essence the following 19
@@ -70,10 +71,6 @@ keyboard presses will start playing the episode: Ctrl+Alt+T then type "tilos" th
 
 ## Windows
 The app is currently not available for Windows.[^1]
-
-[^1] Notes: termios is not implemented for Windows. Later on users will have to add VLC to path:
-https://www.vlchelp.com/add-vlc-command-prompt-windows/#:~:text=You%20can%20also%20directly%20press,and%20press%20Enter%20or%20OK.&text=The%20environment%20variables%20should%20be,to%20run%20the%20commands%20easily.
-]
 
 # Usage
 ## Ubuntu
@@ -84,3 +81,5 @@ Try running python3 install.py in the tilos_player-main folder if some shows wor
 Feature: (headless) VLC with simple controls from the command line, e.g. pause, next episode, previous episode - not much more
 Stability: copy the files to a safe location where users won't delete / move the files
 Feature: play livestream
+
+[^1]: Notes: termios is not implemented for Windows. Later on users will have to add VLC to path.
